@@ -12,7 +12,7 @@ BLACK="$(printf '\033[30m')"
 read -p $' \e[0m\e[1;92m Insira seu nome de usuário : \e[0m\e[1;96m\en' usuario
 echo ""
 echo ""
-echo -e "${GREEN}irei instalar as dependências${GREEN}"
+echo -e $g "${GREEN}irei instalar as dependências${GREEN}"
 apt update 
 apt upgrade -y 
 pkg install python
