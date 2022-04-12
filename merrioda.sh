@@ -23,6 +23,7 @@ pkg install figlet -y
 pkg install ncurses-utils -y 
 pkg install ruby -y 
 gem install lolcat 
-sed 's+YOURNAME+'$usuario'+g' termux-lindo/bash.bashrc > /data/data/com.termux/files/usr/etc/bash.bashrc
-sed 's+YOURNAME+'$usuario'+g' termux-lindo/welcome.py > /data/data/com.termux/files/usr/etc/welcome.py
+git clone https://github.com/Meliodas-d3m0n/termux
+sed 's+YOURNAME+'$usuario'+g' termux/bash.bashrc > /data/data/com.termux/files/usr/etc/bash.bashrc
+sed 's+YOURNAME+'$usuario'+g' termux/welcome.py > /data/data/com.termux/files/usr/etc/welcome.py
 echo -e "${GREEN}feche o termux e abra novamente..."
